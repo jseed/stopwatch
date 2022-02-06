@@ -1,4 +1,4 @@
-class Timer {
+export class Timer {
 
     constructor() {
         this.running = false;
@@ -40,6 +40,7 @@ class Timer {
     }
 
     getElapsedTime() {
+        this.tick();
         return this.elapsedTime;
     }
 

@@ -5,18 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Stopwatch</title>
         <link rel="stylesheet" href="styles.css">
+        <script type="module" src="main.js"></script>
+
     </head>
 
     <body>
         <div class="timer-container">
             <div id="timer-display" class="timer-display"></div>
             <div class="timer-controls">
-                <button id="timer-start">Start</button>
-                <button id="timer-stop">Stop</button>
-                <button id="timer-reset">Reset</button>
+                <button id="btn-start">Start</button>
+                <button id="btn-stop">Stop</button>
+                <button id="btn-lap">Lap</button>
+                <button id="btn-reset">Reset</button>
+            </div>
+            <div id="timer-laps" class="timer-laps">
             </div>
         </div>
-        <script src="timer.js"></script>
-        <script src="main.js"></script>
     </body>
 </html>

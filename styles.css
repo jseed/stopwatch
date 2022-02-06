@@ -29,6 +29,35 @@ body,html {
     flex-direction: row;
 }
 
+.timer-laps {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-areas: "lap-head time-head duration-head";
+    grid-gap: 8px 16px;
+    font-size: 24px;
+    margin-top: 32px;
+    overflow-y: auto;
+}
+
+.timer-lap-header, .timer-lap-col {
+    text-align: center;
+}
+
+.timer-lap-header {
+    font-weight: bold;
+}
+
+.timer-lap-header.timer-lap-number {
+    grid-area: lap-head;
+}
+
+.timer-lap-header.timer-lap-time {
+    grid-area: time-head;
+}
+.timer-lap-header.timer-lap-duration {
+    grid-area: duration-head;
+}
+
 button {
     height: 38px;
     line-height: 38px;
